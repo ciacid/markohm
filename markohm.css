@@ -4,6 +4,7 @@
 body {
   background-color: #0d0b0b;
   display: flex;
+  
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
@@ -199,9 +200,9 @@ body {
 
 .caution {
   position: absolute;
-  bottom: 0%;
-  left: -3%;
-  width: 31%;
+  bottom: 3%;
+  left: -5%;
+  width: 50%;
   max-width: 130px;
   z-index: 10;
   transform: rotate(-5deg);
@@ -256,6 +257,7 @@ a:active .teamo {
 
 .bandaid {
   position: absolute;
+  top: 3%;
   width: 19%;
   max-width: 80px;
   z-index: 10;
