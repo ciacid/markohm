@@ -20,7 +20,7 @@ body {
   width: 100%; /* Use percentage of viewport width */
   max-width: 415px; /* Maximum size */
   aspect-ratio: 736 / 1308; /* Maintain aspect ratio */
-  background: url('asset/Backgrounddd.png') no-repeat center center;
+  background: url('asset/Backgroun\ baru.jpg') no-repeat center center;
   background-size: cover;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -33,7 +33,6 @@ body {
   left: 7%;
   right: 7%;
   bottom: 8%;
-  background-color: rgba(255, 255, 255, 0.832);
   border-radius: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
