@@ -45,8 +45,8 @@ body {
   /* ========== Bill/Receipt styles ========== */
   .bill-wrapper {
     position: absolute;
-    top: 12.8%;
-    left: 5%;
+    top: 13.9%;
+    left: 4%;
     width: 90%;
     height: 75%;
     overflow-y: auto;
