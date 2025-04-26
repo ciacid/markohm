@@ -1,0 +1,335 @@
+body {
+  background-color: #0d0b0b;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* align start biar scroll ke atas */
+  height: 100vh;
+  margin: 0;
+  margin-top: 60px;
+  padding-top: 20px; 
+    overflow: hidden;
+  
+  
+}
+
+.mkohm {
+  position: absolute;
+  bottom: 0px;     /* Jarak dari bawah */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 310px;     
+  z-index: 10;
+}
+
+.fish{position: absolute;
+  top: 34%;
+  left: 3%;
+  width: 70px; /* Ukuran gambar */
+  z-index: 10;
+ }
+ .omg{
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 45px; /* Ukuran gambar */
+  z-index: 10;
+ }
+ .flower{
+  position: absolute;
+  top: 23%;
+  left: 37%;
+  width: 95px; /* Ukuran gambar */
+  z-index: 10;
+ }
+
+ .raket{
+  position: absolute;
+  bottom: 22%;
+  left: -4%;
+  width: 115px; /* Ukuran gambar */
+  z-index: 10;
+ }
+
+ .sayur{
+  position: absolute;
+  bottom: 7%;
+  left: 46%;
+  width: 45px; /* Ukuran gambar */
+  z-index: 10;
+ }
+
+ .camera{
+  position: absolute;
+  bottom: 1%;
+  right: 10%;
+  width: 75px; /* Ukuran gambar */
+  z-index: 10;
+  transform: rotate(18deg);
+ }
+
+ .dog2{
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  width: 60px; /* Ukuran gambar */
+  z-index: 10;
+ }
+
+ .sant{
+  position: absolute;
+  bottom: 23%;
+  right: 2%;
+  width: 45px; /* Ukuran gambar */
+  z-index: 10;
+  transform: rotate(-10deg);
+ }
+
+ .biru{
+  position: absolute;
+  bottom: 30%;
+  right: 0%;
+  width: 80px; /* Ukuran gambar */
+  z-index: 10;
+ }
+
+ .vinyl{
+  position: absolute;
+  top: 33%;
+  right: 2%;
+  width: 40px; /* Ukuran gambar */
+  z-index: 10;
+ }
+
+ .bunga{
+  position: absolute;
+  top: 33%;
+  right: 33%;
+  width: 30px; /* Ukuran gambar */
+  z-index: 10;
+ }
+
+ .sushi{
+  position: absolute;
+  top: 20%;
+  right: 13%;
+  width: 30px; /* Ukuran gambar */
+  z-index: 10;
+ }
+
+  .love{
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 60px; /* Ukuran gambar */
+  z-index: 10;
+ }
+
+ .headband{
+  position: absolute;
+  top: 22%;
+  right: 7%;
+  width: 145px; /* Ukuran gambar */
+  z-index: 10;
+ }
+ .glass{
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  width: 40px; /* Ukuran gambar */
+  z-index: 10;
+ }
+ .quote2{
+  position: absolute;
+  top: 56%;
+  left: 11%;
+  width: 65px; /* Ukuran gambar */
+  z-index: 10;
+  transform: rotate(-18deg);
+ }
+
+.caution {
+  position: absolute;
+  bottom: 0%;
+  left: -3%;
+  width: 130px; /* Ukuran gambar */
+  z-index: 10;
+  transform: rotate(-5deg);
+}
+
+
+.Digicam {
+  top: 18%;
+  left: 20%;
+  position: absolute;   
+  width: 280px;     
+  z-index: 10;
+}
+
+
+.quote {
+  position: absolute;
+  top: 12%;
+  left: 35%;
+  width: 100px; /* Ukuran gambar */
+  z-index: 10;
+}
+
+.glasses {
+  position: absolute;
+  top: 29%;
+  left: 28%;
+  width: 50px; /* Ukuran gambar */
+  z-index: 10;
+  transform:rotate(15deg);
+}
+
+.teamo {
+  position: absolute;
+  top: 63%;
+  left: 51%;
+  width: 30px; /* Ukuran gambar */
+  z-index: 10;
+}
+
+.teamo {
+  transition: all 0.2s ease;
+  border-radius: 16px;
+}
+
+/* Saat disentuh, dihover, atau diklik */
+a:hover .teamo,
+a:focus .teamo,
+a:active .teamo {
+  box-shadow: 0 0 10px #e28eaa;
+  transform: scale(1.05); /* efek zoom sedikit */
+}
+
+
+.phone-frame {
+  position: relative;
+  width: 100vw;
+  max-width: 415px; /* Ukuran maksimal seperti iPhone */
+  aspect-ratio: 736 / 1308; /* Rasio gambar HP */
+  background: url('asset/Backgrounddd.png') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay transparan seperti layar HP */
+.overlay-box {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  right: 30px;
+  bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.832);
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bandaid{
+  position: absolute;
+  width: 80px;
+  z-index: 10;
+  transform: rotate(-40deg);
+ 
+}
+
+.logo {
+  position: absolute;
+  left: 42%;
+  width: 50px;
+  z-index: 9999;
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
+}
+
+.star {
+  position: absolute;
+  right: 20px;     /* jarak dari kanan */
+  width: 45px;
+  z-index: 10;
+  transform: rotate(-40deg);
+}
+
+/* container huruf */
+.markohm-logo{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;   /* sejajar di baseline */
+  gap:0;                  /* jarak default nol—kita atur per huruf */
+}
+
+
+.markohm-logo img{
+  height:38px;            
+  width:auto;
+  object-fit:contain;
+  margin-inline:-3px;     
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));
+}
+
+
+.m1{            
+  transform:rotate(-7deg);
+  margin-bottom:4px;      
+}
+.a{            
+  transform:rotate(5deg);
+  margin-bottom:8px;
+}
+
+.r{
+  transform:rotate(-2deg);
+  margin-bottom:4px;
+  z-index: 10;
+}
+
+.k{
+  transform:rotate(2deg);
+  margin-bottom:2px;
+}
+
+.o{
+  height: 48px !important;
+  transform:rotate(-4deg);
+  margin-top:4px;
+}
+
+.h{
+  transform:rotate(-12deg);
+  margin-bottom:1px;
+}
+
+.m2 {
+  height: 55px !important;
+  margin-top: 4px;
+}
+
+
+
+.photo-carousel {
+  position: absolute;
+  top: 43%;
+  left: 0%;
+  width: 100%; /* biar carousel full lebar HP */
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  z-index: 9;
+  scroll-behavior: smooth;
+
+  /* opsional: sembunyikan scrollbar */
+  /* scrollbar-width: none; */
+}
+.photo-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.photo-slide {
+  display: inline-block;
+  width: 630px; /* ukuran sesuai yang kamu pakai sebelumnya */
+  height: auto;
+  margin-right: -5px;
+}
