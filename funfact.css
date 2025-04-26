@@ -2,104 +2,104 @@ body {
     background-color: #0d0b0b;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* align start biar scroll ke atas */
+    align-items: center;
     height: 100vh;
     margin: 0;
-    margin-top: 60px;
-    padding-top: 20px; 
-      overflow: hidden;
-     
+    padding: 0;
+    overflow: hidden;
   }
-
+  
   .phone-frame {
     position: relative;
-    width: 100vw;
-    max-width: 415px; /* Ukuran maksimal seperti iPhone */
-    aspect-ratio: 736 / 1308; /* Rasio gambar HP */
-    background-color:  #648660;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    aspect-ratio: 9/16; /* Standard mobile aspect ratio */
+    background-color: #648660;
     background-size: cover;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   }
-
+  
   .pawpng {
     position: absolute;
     left: -1%;
     width: 120%;
-    z-index: 10;
+    z-index: 1;
     opacity: 0.031;
-  filter: brightness(0) invert(0); 
-  z-index: 1;
+    filter: brightness(0) invert(0);
   }
-
+  
   .print {
-    position: absolute; /* atau relative jika sesuai konteks */
+    position: absolute;
     top: 2%;
     width: 90%;
     height: 15%;
-    left: 6%;
+    left: 5%;
     z-index: 10;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-    object-fit: contain; /* opsional: biar isi tidak gepeng */
+    object-fit: contain;
   }
   
-  /* ========== Tambahan untuk STRUK (BILL) ========== */
-
+  /* ========== Bill/Receipt styles ========== */
   .bill-wrapper {
     position: absolute;
-    top: 15%;
+    top: 18%;
     left: 5%;
     width: 90%;
-    height: 75%;         /* kasih tinggi tetap agar bisa scroll */
-    overflow-y: auto;    /* aktifkan scroll vertikal */
+    height: 75%;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: clamp(10px, 2vh, 20px); /* Responsive gap */
     align-items: center;
     z-index: 20;
-    padding-right: 4px;  /* biar scroll gak mepet */
+    padding-right: 4px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   }
   
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .bill-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .bill-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
   
   .bill {
     width: 100%;
     max-width: 330px;
     background: url('asset/Empty bill.png') no-repeat center center;
     background-size: contain;
-    padding: 20px 16px 30px;
+    padding: clamp(15px, 4vw, 20px) clamp(12px, 3vw, 16px) clamp(25px, 6vw, 30px);
     font-family: monospace;
     text-align: center;
     aspect-ratio: 2 / 3;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 12px;
+    gap: clamp(8px, 2vw, 12px);
     background-color: transparent;
   }
   
-  
-  
   .bill-number {
     font-weight: bold;
+    font-size: clamp(12px, 3vw, 14px);
   }
-
   
   .bill-source {
-    font-size: 12px;
-    margin-top: auto; /* dorong ke bawah agar simetris */
-    font-size: 11px;
-  }
-  
-  .bill-quote {
-    font-size: 13px;
-    line-height: 1.4;
-    padding: 4px 10px;
+    margin-top: auto;
+    font-size: clamp(10px, 2.5vw, 11px);
   }
   
   .bill-media {
-    aspect-ratio: 4 / 6;            /* atau 3/4, 16/9 sesuai tampilan yang kamu mau */
+    aspect-ratio: 4 / 6;
     width: 100%;
-    max-width: 250px;               /* batas lebar maksimal */
+    max-width: 250px;
     background-color: #ccc;
     border-radius: 10px;
     overflow: hidden;
@@ -109,69 +109,92 @@ body {
     margin: 0 auto;
   }
   
-  
-  
   .bill-media img,
   .bill-media video {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
   }
-
+  
   .bill-media video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; /* hilangkan garis bawah/tombol aneh kadang */
+    display: block;
     border-radius: 10px;
   }
-  
   
   .bill-quote-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    margin: 8px 0;
+    gap: clamp(4px, 1vw, 6px);
+    margin: clamp(6px, 1.5vw, 8px) 0;
   }
   
   .quote-top,
-.quote-bottom {
-  height: 1px;
-  border-top: 1px dashed #000;
-  width: 80%;         /* Lebar garis bisa diatur */
-  margin: 0 auto;     /* Ini yang bikin posisi ke tengah */
-}
-
+  .quote-bottom {
+    height: 1px;
+    border-top: 1px dashed #000;
+    width: 80%;
+    margin: 0 auto;
+  }
   
-.bill-quote {
-    font-size: 11px;
+  .bill-quote {
+    font-size: clamp(10px, 2.5vw, 11px);
     line-height: 1.4;
-    padding: 4px 10px;
-    max-width: 80%;        /* batasi lebar maksimum */
-    margin: 0 auto;        /* supaya teks tetap di tengah */
-    text-align: center;    /* buat teksnya rapih tengah juga */
+    padding: clamp(3px, 1vw, 4px) clamp(8px, 2vw, 10px);
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
   }
   
   .logo {
     position: absolute;
     top: 1%;
-    left: 42%;
-    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(40px, 8vw, 50px);
     z-index: 9999;
     filter: brightness(0) invert(1);
     opacity: 0.5;
-    z-index: 9999;
   }
-
+  
   .back {
     position: absolute;
     bottom: 1%;
-    left: 45%;
-    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(40px, 8vw, 50px);
     z-index: 9999;
     filter: brightness(0) invert(1);
     opacity: 0.5;
-    z-index: 9999;
   }
-
   
+  /* Media queries for different screen sizes */
+  @media (max-width: 320px) {
+    .bill-wrapper {
+      top: 20%;
+      gap: 8px;
+    }
+    
+    .bill {
+      padding: 12px 10px 25px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .phone-frame {
+      max-width: 500px;
+      max-height: 90vh;
+    }
+  }
+  
+  /* Fix for iPhone X and newer with notch */
+  @supports (padding: max(0px)) {
+    .phone-frame {
+      padding-left: max(0px, env(safe-area-inset-left));
+      padding-right: max(0px, env(safe-area-inset-right));
+      padding-top: max(0px, env(safe-area-inset-top));
+      padding-bottom: max(0px, env(safe-area-inset-bottom));
+    }
+  }
