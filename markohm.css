@@ -34,8 +34,7 @@ body {
   right: 7%;
   bottom: 8%;
   border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+ }
 
 /* Make all decorative elements responsive using viewport width */
 .mkohm {
