@@ -38,9 +38,9 @@ window.addEventListener('DOMContentLoaded', () => {
         no: '05',
         quote: `LEGOKIDSDAY x MarkOhm`,
         date: '09/01/2025',
-        media: ['event/15.jpeg'],
-        sourceText: 'Instagram: @ohmtpk',
-        sourceUrl: 'https://www.instagram.com/ohmtpk'
+        media: ['event/15.jpeg', 'event/lego.mp4', 'event/lego2.jpeg', 'event/lego1.jpeg'],
+        sourceText: '@bearly_bear_  @ff_thegallery @fanTpkrubs',
+        sourceUrl: 'https://x.com/pkkohm/status/1877350762591797330'
       },
       {
         no: '06',
