@@ -4,41 +4,41 @@ window.addEventListener('DOMContentLoaded', () => {
     const data = [
       {
         no: '01',
-        quote: `YBOOKFAIR x MarkOhm`,
-        date: '22/06/2024',
-        media: ['event/0.jpeg', 'event/1.jpeg', 'event/3.jpeg'],
-        sourceText: 'X @SweetToothTH',
-        sourceUrl: 'https://x.com/SweetToothTH/status/1804750226277720193 '
+        quote: `Thrift date`,
+        date: '28/06/2024',
+        media: 'video/2.mp4',
+        sourceText: 'Ig @ohmtpk',
+        sourceUrl: 'https://www.instagram.com/reel/C8wr2TqyU7Z/'
       },
       {
         no: '02',
-        quote: `Press conference "12 August Half Marathon\nBangkok 2024 x MarkOhm`,
-        date: '03/07/2024',
-        media: ['event/6.jpeg', 'event/7.jpeg', 'event/8.jpeg','event/9.jpeg'],
-        sourceText: 'X  @ff_thegallery',
-        sourceUrl: ' https://x.com/ff_thegallery/status/1808402819739013238'
+        quote: 'Baking class date',
+        date: '10/11/2024',
+        media: ['bakingdate/6.mp4', 'bakingdate/1.JPG', 'bakingdate/2.JPG', 'bakingdate/3.mp4', 'bakingdate/4.mp4'],
+        sourceText: 'Ig @ohmtpk',
+        sourceUrl: ' https://www.instagram.com/reel/DA72W2ZSdwN/ '
       },
       {
         no: '03',
-        quote: `OishiHKDCorn x MarkOhm`,
-        date: '03/09/2024',
-        media: ['event/10.jpeg', 'event/11.jpeg', 'event/12.jpeg','event/13.png'],
-        sourceText: 'X  @ff_thegallery ',
-        sourceUrl: 'https://x.com/ff_thegallery/status/1830918681863618578 '
+        quote: `Hirono Exhibition Date`,
+        date: '12/07/2024',
+        media: ['hirono/hirono.mp4','hirono/hirono1.jpeg', 'hirono/hirono3.jpeg', 'hirono/hirono4.jpeg'],
+        sourceText: ' X @Nattha2538 ',
+        sourceUrl: 'https://x.com/Nattha2538/status/1806729394926583954  '
       },
       {
         no: '04',
-        quote: `OISHIxGFTRIP2024 x MarkOhm`,
-        date: '10-14/11/2024',
-        media: ['event/14.jpeg'],
+        quote: 'Valentine`s date',
+        date: '14/02/2025',
+        media: 'video/valentine.mp4',
         sourceText: 'Instagram: @ohmtpk',
         sourceUrl: 'https://www.instagram.com/ohmtpk'
       },
       {
         no: '05',
-        quote: `LEGOKIDSDAY x MarkOhm`,
-        date: '09/01/2025',
-        media: ['event/15.jpeg'],
+        quote: 'Dinner Night Date',
+        date: '20/04/2025',
+        media: ['dinnerdate/horsamut.mp4', 'dinnerdate/1.PNG', 'dinnerdate/2.JPG', 'dinnerdate/3.JPG', 'dinnerdate/4.JPG'],
         sourceText: 'Instagram: @ohmtpk',
         sourceUrl: 'https://www.instagram.com/ohmtpk'
       },

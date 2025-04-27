@@ -16,7 +16,7 @@ body {
     max-width: 100vw;
     max-height: 100vh;
     aspect-ratio: 9/16; /* Standard mobile aspect ratio */
-    background-color: rgb(159, 161, 240);
+    background-color: rgb(137, 184, 223);
     background-size: cover;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);

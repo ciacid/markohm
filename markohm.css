@@ -406,3 +406,10 @@ a:active .teamo {
     height: 55px !important;
   }
 }
+
+.flower,
+.headband,
+.caution {
+  position: absolute;
+  z-index: 9999; /* kasih lebih tinggi */
+}
