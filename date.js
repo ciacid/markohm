@@ -41,7 +41,18 @@ window.addEventListener('DOMContentLoaded', () => {
         media: ['dinnerdate/horsamut.mp4', 'dinnerdate/1.PNG', 'dinnerdate/2.JPG', 'dinnerdate/3.JPG', 'dinnerdate/4.JPG'],
         sourceText: 'Instagram: @ohmtpk',
         sourceUrl: 'https://www.instagram.com/ohmtpk'
-      },
+      },{
+        no: '06',
+        quote: 'Beach Trip',
+        date: '1-2/03/2025',
+        media: ['markohmpcrn/vacation1.mp4','markohmpcrn/vacation2.mp4','markohmpcrn/1.mp4','markohmpcrn/2.jpg', 'markohmpcrn/3.jpg', 'markohmpcrn/4.jpg', 'markohmpcrn/5.jpg', 'markohmpcrn/6.jpg'
+            ,'markohmpcrn/7.jpg', 'markohmpcrn/8.jpg', 'markohmpcrn/9.jpg', 'markohmpcrn/10.jpg', 'markohmpcrn/11.jpg','markohmpcrn/12.jpg', 'markohmpcrn/13.jpg', 'markohmpcrn/14.jpg', 'markohmpcrn/15.jpg', 'markohmpcrn/16.jpg',
+        'markohmpcrn/17.jpg', 'markohmpcrn/18.jpg', 'markohmpcrn/19.jpg', 'markohmpcrn/20.jpg', 'markohmpcrn/21.jpg', 'markohmpcrn/22.mp4', 'markohmpcrn/23.jpg', 
+        'markohmpcrn/25.jpg', 'markohmpcrn/26.jpg', 'markohmpcrn/27.jpg', 'markohmpcrn/28.jpg', 'markohmpcrn/29.jpg','markohmpcrn/30.jpg', 'markohmpcrn/31.jpg', 'markohmpcrn/32.jpg', 'markohmpcrn/33.jpg', 
+        ],
+        sourceText: 'Instagram: @ohmtpk',
+        sourceUrl: 'https://www.instagram.com/ohmtpk'
+      }
     ];
   
     data.forEach((item, index) => {
