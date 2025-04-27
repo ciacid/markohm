@@ -97,17 +97,43 @@ body {
   }
   
   .bill-media {
-    aspect-ratio: 4 / 6;
-    width: 100%;
-    max-width: 250px;
+    position: relative;
+    width: 75%; /* jangan terlalu lebar, sekitar 80-85% dari struk */
+    aspect-ratio: 4/6; /* Ratio lebih kotak, kayak area abu2 gambar */
     background-color: #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
   }
+  
+  .slide img,
+  .slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius:5px;
+  }
+  
   
   .bill-media img,
   .bill-media video {
@@ -121,7 +147,7 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
   .bill-quote-wrapper {
@@ -198,3 +224,25 @@ body {
       padding-bottom: max(0px, env(safe-area-inset-bottom));
     }
   }
+
+  
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.nav-button.left {
+  left: 10px;
+}
+
+.nav-button.right {
+  right: 10px;
+}

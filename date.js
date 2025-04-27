@@ -4,34 +4,44 @@ window.addEventListener('DOMContentLoaded', () => {
     const data = [
       {
         no: '01',
-        quote: `"I spend time taking care of others\ninstead of myself, ohm will do that for me"`,
+        quote: `"First bouquet from Ohm"`,
         date: '03/05/2024',
-        media: 'asset/foto1.jpg',
-        source: 'twitter.com/someone'
+        media: ['1bookfair/0.jpeg', '1bookfair/1.jpeg', '1bookfair/3.jpeg'],
+        sourceText: 'Tiktok: @someuser',
+        sourceUrl: 'https://www.tiktok.com/@someuser'
       },
       {
         no: '02',
-        quote: `"Mark’s first flower bouquet on\nvalentine's made by Ohm"`,
+        quote: `"Second memory with Ohm"`,
         date: '04/04/2024',
-        media: 'asset/valentine.mp4',
-        source: 'tiktok.com/@someuser'
+        media: 'video/valentine.mp4',
+        sourceText: 'Instagram: @ohmtpk',
+        sourceUrl: 'https://www.instagram.com/ohmtpk'
       }
     ];
   
-    data.forEach(item => {
+    data.forEach((item, index) => {
       const bill = document.createElement('div');
       bill.className = 'bill';
   
-      // Deteksi ekstensi media
-      const ext = item.media.split('.').pop().toLowerCase();
-      let mediaElement = '';
+      let mediaSlides = '';
   
-      if (['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext)) {
-        mediaElement = `<img src="${item.media}" alt="media" />`;
-      } else if (['mp4', 'webm', 'ogg'].includes(ext)) {
-        mediaElement = `<video src="${item.media}" controls></video>`;
+      if (Array.isArray(item.media)) {
+        item.media.forEach(file => {
+          const ext = file.split('.').pop().toLowerCase();
+          if (['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext)) {
+            mediaSlides += `<div class="slide"><img src="${file}" alt="media" /></div>`;
+          } else if (['mp4', 'webm', 'ogg'].includes(ext)) {
+            mediaSlides += `<div class="slide"><video src="${file}" controls></video></div>`;
+          }
+        });
       } else {
-        mediaElement = `<div>Tidak bisa tampilkan media</div>`;
+        const ext = item.media.split('.').pop().toLowerCase();
+        if (['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext)) {
+          mediaSlides = `<div class="slide"><img src="${item.media}" alt="media" /></div>`;
+        } else if (['mp4', 'webm', 'ogg'].includes(ext)) {
+          mediaSlides = `<div class="slide"><video src="${item.media}" controls></video></div>`;
+        }
       }
   
       bill.innerHTML = `
@@ -46,15 +56,42 @@ window.addEventListener('DOMContentLoaded', () => {
         <div class="bill-date">${item.date}</div>
   
         <div class="bill-media">
-          ${mediaElement}
+          <div class="slider" id="slider-${index}">
+            ${mediaSlides}
+          </div>
+          ${
+            Array.isArray(item.media)
+            ? `
+            <button class="nav-button left" onclick="slideLeft(${index})">&#8592;</button>
+            <button class="nav-button right" onclick="slideRight(${index})">&#8594;</button>
+            `
+            : ''
+          }
         </div>
   
-        <div class="bill-source">source: ${item.source}</div>
+        <div class="bill-source">
+          source: 
+          <a href="${item.sourceUrl}" target="_blank" rel="noopener">
+            ${item.sourceText}
+          </a>
+        </div>
       `;
   
       wrapper.appendChild(bill);
     });
   });
   
-
+  // Functions buat geser tombol
+  function slideLeft(id) {
+    const slider = document.getElementById(`slider-${id}`);
+    const slideWidth = slider.clientWidth;
+    slider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+  }
+  
+  function slideRight(id) {
+    const slider = document.getElementById(`slider-${id}`);
+    const slideWidth = slider.clientWidth;
+    slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+  }
+  
   
