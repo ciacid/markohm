@@ -8,9 +8,9 @@ body {
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
-  /* margin: 0;
-  margin-top: calc(5vh);
-  padding-top: calc(2vh);  */
+  margin: 0;
+  margin-top: calc(-2vh);
+  padding-top: calc(2vh); 
   overflow: hidden;
 }
 
@@ -372,9 +372,9 @@ a:active .teamo {
 }
 
 /* Media queries for different screen sizes */
-@media (max-width: 360px) {
+@media (max-width: 370px) {
   body {
-    margin-top: 3vh;
+    margin-top: -1vh;
   }
   
   .markohm-logo img {
