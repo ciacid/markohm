@@ -4,20 +4,44 @@ window.addEventListener('DOMContentLoaded', () => {
     const data = [
       {
         no: '01',
-        quote: `"First bouquet from Ohm"`,
-        date: '03/05/2024',
-        media: ['1bookfair/0.jpeg', '1bookfair/1.jpeg', '1bookfair/3.jpeg'],
-        sourceText: 'Tiktok: @someuser',
-        sourceUrl: 'https://www.tiktok.com/@someuser'
+        quote: `YBOOKFAIR x MarkOhm`,
+        date: '22/06/2024',
+        media: ['event/0.jpeg', 'event/1.jpeg', 'event/3.jpeg'],
+        sourceText: 'X @SweetToothTH',
+        sourceUrl: 'https://x.com/SweetToothTH/status/1804750226277720193 '
       },
       {
         no: '02',
-        quote: `"Second memory with Ohm"`,
-        date: '04/04/2024',
-        media: 'video/valentine.mp4',
+        quote: `Press conference "12 August Half Marathon\nBangkok 2024 x MarkOhm`,
+        date: '03/07/2024',
+        media: ['event/6.jpeg', 'event/7.jpeg', 'event/8.jpeg','event/9.jpeg'],
+        sourceText: 'X  @ff_thegallery',
+        sourceUrl: ' https://x.com/ff_thegallery/status/1808402819739013238'
+      },
+      {
+        no: '03',
+        quote: `OishiHKDCorn x MarkOhm`,
+        date: '03/09/2024',
+        media: ['event/10.jpeg', 'event/11.jpeg', 'event/12.jpeg','event/13.png'],
+        sourceText: 'X  @ff_thegallery ',
+        sourceUrl: 'https://x.com/ff_thegallery/status/1830918681863618578 '
+      },
+      {
+        no: '04',
+        quote: `OISHIxGFTRIP2024 x MarkOhm`,
+        date: '10-14/11/2024',
+        media: ['event/14.jpeg'],
         sourceText: 'Instagram: @ohmtpk',
         sourceUrl: 'https://www.instagram.com/ohmtpk'
-      }
+      },
+      {
+        no: '05',
+        quote: `LEGOKIDSDAY x MarkOhm`,
+        date: '09/01/2025',
+        media: ['event/15.jpeg'],
+        sourceText: 'Instagram: @ohmtpk',
+        sourceUrl: 'https://www.instagram.com/ohmtpk'
+      },
     ];
   
     data.forEach((item, index) => {
@@ -94,4 +118,27 @@ window.addEventListener('DOMContentLoaded', () => {
     slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
   }
   
+  window.addEventListener('DOMContentLoaded', () => {
+    // Bikin semua image di dalam slide bisa diklik
+    document.addEventListener('click', function(e) {
+      if (e.target.tagName === 'IMG' && e.target.closest('.slide')) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        modal.style.display = "block";
+        modalImg.src = e.target.src;
+      }
+    });
+  
+    // Tutup modal pas klik tombol close
+    document.querySelector('.close').onclick = function() {
+      document.getElementById('imageModal').style.display = "none";
+    };
+  
+    // Tutup modal pas klik di luar gambar
+    document.getElementById('imageModal').onclick = function(event) {
+      if (event.target == this) {
+        this.style.display = "none";
+      }
+    };
+  });
   

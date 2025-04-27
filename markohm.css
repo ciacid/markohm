@@ -20,7 +20,7 @@ body {
   width: 100%; /* Use percentage of viewport width */
   max-width: 415px; /* Maximum size */
   aspect-ratio: 736 / 1308; /* Maintain aspect ratio */
-  background: url('asset/Backgrounbaru.jpg') no-repeat center center;
+  background: url('asset/bgpolos.jpg') no-repeat center center;
   background-size: cover;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -87,8 +87,8 @@ body {
 
 .sayur {
   position: absolute;
-  bottom: 7%;
-  left: 46%;
+  bottom: 4%;
+  left: 44%;
   width: 11%;
   max-width: 45px;
   z-index: 10;
@@ -143,16 +143,16 @@ body {
 
 .bunga {
   position: absolute;
-  top: 33%;
-  right: 33%;
+  top: 32%;
+  right: 31%;
   width: 7%;
-  max-width: 30px;
+  max-width: 28px;
   z-index: 10;
 }
 
 .sushi {
   position: absolute;
-  top: 20%;
+  top: 23%;
   right: 13%;
   width: 7%;
   max-width: 30px;
@@ -166,6 +166,16 @@ body {
   width: 14.5%;
   max-width: 60px;
   z-index: 10;
+}
+
+.ijo {
+  position: absolute;
+  top: 15%;
+  right: 19%;
+  width: 14.5%;
+  max-width: 40px;
+  z-index: 10;
+  transform: rotate(18deg);
 }
 
 .headband {
@@ -217,7 +227,7 @@ body {
 
 .quote {
   position: absolute;
-  top: 12%;
+  top: 16%;
   left: 35%;
   width: 24%;
   max-width: 100px;
@@ -226,7 +236,7 @@ body {
 
 .glasses {
   position: absolute;
-  top: 29%;
+  top: 33%;
   left: 28%;
   width: 12%;
   max-width: 50px;
@@ -237,7 +247,7 @@ body {
 .teamo {
   position: absolute;
   top: 63%;
-  left: 51%;
+  left: 50%;
   width: 7%;
   max-width: 30px;
   z-index: 10;
@@ -255,7 +265,7 @@ a:active .teamo {
 
 .bandaid {
   position: absolute;
-  top: 3%;
+  top: 1%;
   width: 19%;
   max-width: 80px;
   z-index: 10;
@@ -278,7 +288,7 @@ a:active .teamo {
   width: 11%;
   max-width: 45px;
   z-index: 10;
-  transform: rotate(-40deg);
+  transform: rotate(-50deg);
 }
 
 .textmarkohm {
