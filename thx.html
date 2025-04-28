@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markohm Date</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    body {
+      background-color: #0d0b0b;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+      padding-top: 0vh;
+      overflow: hidden;
+    }
+    .phone-frame {
+      position: relative;
+      width: 100%;
+      max-width: 415px;
+      aspect-ratio: 736 / 1308;
+      background: url('asset/bgthx.png') no-repeat center center;
+      background-size: cover;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .sosmed-row-top {
+      position: absolute;
+      bottom: 20%; 
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      gap: 14px; /* horizontal gap between icons */
+    }
+
+    .sosmed-row-bottom {
+      position: absolute;
+      bottom: 16%; 
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      gap: 14px; /* horizontal gap between icons */
+    }
+
+
+    .sosmed-row-top a img{
+        
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      transition: transform 0.2s;
+      display: block;
+    }
+    .sosmed-row-bottom a img {
+        padding-top: 0vh;
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      transition: transform 0.2s;
+      display: block;
+    }
+
+    .sosmed-row-top a img:hover,
+    .sosmed-row-bottom a img:hover {
+      transform: scale(1.1);
+    }
+    .sosmed-row-top, .sosmed-row-bottom, .sosmed-row-top a, .sosmed-row-bottom a {
+  padding: 0;
+}
+  </style>
+</head>
+<body>
+  <div class="phone-frame">
+    <!-- First row with separate class -->
+    <div class="sosmed-row-top">
+      <a href="https://www.instagram.com/mmarkpkk/?utm_source=ig_web_button_share_sheet"><img src="sosmed/i m.png" alt="Instagram M" /></a>
+      <a href="https://www.tiktok.com/@mark.pakin?is_from_webapp=1&sender_device=pc"><img src="sosmed/t m.png" alt="Tiktok M" /></a>
+      <a href="https://x.com/mmarkpkk"><img src="sosmed/x m.png" alt="Twitter M" /></a>
+    </div>
+    
+    <!-- Second row with separate class -->
+    <div class="sosmed-row-bottom">
+      <a href="https://www.instagram.com/ohmtpk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="sosmed/i o.png" alt="Instagram O" /></a>
+      <a href="https://www.tiktok.com/@ohmtpk?is_from_webapp=1&sender_device=pc"><img src="sosmed/t o.png" alt="Tiktok O" /></a>
+      <a href="https://x.com/Tpkkrubs"><img src="sosmed/x o.png" alt="Twitter O" /></a>
+    </div>
+  </div>
+</body>
+</html>
