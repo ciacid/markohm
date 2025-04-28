@@ -64,7 +64,6 @@ window.addEventListener('DOMContentLoaded', () => {
         date: '05/04/2025',
         media: ['event/17.jpeg', 'event/bkbbif.jpeg','event/bkbbif1.jpeg','event/bkbbif2.jpeg','event/bkbbif.mp4'],
         sources: [
-          { text: 'Hashtag', url:'https://x.com/GrabTH/status/1897629995155255403' },
           { text: 'Foto by @ff_thegallery', url:'https://x.com/ff_thegallery/status/1908487825903018315' }
         ]
       },
