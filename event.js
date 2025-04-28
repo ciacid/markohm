@@ -44,9 +44,9 @@ window.addEventListener('DOMContentLoaded', () => {
         date: '09/01/2025',
         media: ['event/15.jpeg', 'event/lego.mp4', 'event/lego2.jpeg', 'event/lego1.jpeg'],
         sources: [
-          { text: '@bearly_bear_', url: 'https:/bearly_bear_/x.com//status/1877350762591797330' },
-          { text: '@ff_thegallery', url: 'https://x.com/ff_thegallery/status/1877350762591797330' },
-          { text: '@fanTpkrubs', url: 'https://x.com/fanTpkrubsstatus/1877350762591797330' }
+          { text:'X @bearly_bear_', url: 'https://x.com/bearly_bear_' },
+          { text: '@ff_thegallery', url: 'https://x.com/ff_thegallery' },
+          { text: '@fanTpkkrubs', url: 'https://x.com/fanTpkkrubs' }
         ]
       },
       {
@@ -55,7 +55,9 @@ window.addEventListener('DOMContentLoaded', () => {
         date: '06/03/2025',
         media: ['event/16.jpeg', '6 grab/grab.mp4','6 grab/grab1.jpeg', '6 grab/grab 2.jpeg', '6 grab/grab3.jpeg','6 grab/grab 4.jpeg'],
         sources: [
-          { text: 'X: @GrabTH', url: 'https://x.com/GrabTH/status/1897629995155255403' }
+          { text: 'X @GrabTH', url: 'https://x.com/GrabTH/status/1897629995155255403' },
+          { text: '@TUTa0218', url: 'https://x.com/fanTpkkrubs/status/1897630871727100141' },
+          { text: '@springwaste', url: 'https://x.com/springwaste/status/1897630168711401587' }
         ]
       },
       {
@@ -64,7 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
         date: '05/04/2025',
         media: ['event/17.jpeg', 'event/bkbbif.jpeg','event/bkbbif1.jpeg','event/bkbbif2.jpeg','event/bkbbif.mp4'],
         sources: [
-          { text: 'Foto by @ff_thegallery', url:'https://x.com/ff_thegallery/status/1908487825903018315' }
+          { text: ' @ff_thegallery', url:'https://x.com/ff_thegallery/status/1908487825903018315' }
         ]
       },
       {
@@ -73,26 +75,27 @@ window.addEventListener('DOMContentLoaded', () => {
         date: '05/04/2025',
         media: 'event/intv1.jpeg',
         sources: [
-          { text: 'Khaosod Trans by: winspumpkin', url: 'https://x.com/winspumpkin/status/1916101858743226545' }
+          { text: 'Khaosod', url: 'https://www.khaosod.co.th/entertainment/news_9727723' },
+          { text: 'Trans by: winspumpkin', url: 'https://x.com/winspumpkin/status/1916101858743226545' }
         ]
       },
       {
         no: '09',
         quote: `MANGU E-Magazine Issue 301 MarkOhm`,
         date: '05/04/2025',
-        media: ['event/intv2.jpeg', 'event/mangu.jpeg', 'event/mangu2.jpeg', 'event/mangu3.jpeg'],
+        media: ['event/intv2.jpeg','event/msngu.mp4', 'event/mangu.jpeg', 'event/mangu2.jpeg', 'event/mangu3.jpeg'],
         sources: [
-          { text: 'Instagram: @ohmtpk', url: 'https://www.instagram.com/ohmtpk' }
+          { text: 'Mangu', url: 'https://www.atmangu.com/article/2549' }
         ]
       },
       {
         no: '10',
         quote: '#PraewFavorxMarkOhm',
         date: '03/07/2024',
-        media: ['event/intv3.jpeg', 'event/praew1.jpeg','event/praew2.jpeg','event/praew3.jpeg','event/praew4.jpeg','event/videopraew.mp4'],
+        media: ['event/intv3.jpeg', 'event/praew1.jpeg','event/praew2.jpeg','event/praew3.jpeg','event/praew4.jpeg'],
         sources: [
-          { text: 'X @Praewdaily trans video by @ohmtpkk', url: 'https://x.com/ohmtpkk/status/1908189460023656908' },
-          { text: 'X @Praewdaily trans magz by @ohmtpkk', url: 'https://x.com/ohmtpkk/status/1912851760261271870' }
+          { text: 'Praewdaily', url: 'https://praew.com/people/praew-interview/552029.html' },
+          { text: 'Trans by @ohmtpkk', url: 'https://x.com/ohmtpkk/status/1912851760261271870' }
         ]
       }
     ];
