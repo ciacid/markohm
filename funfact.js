@@ -36,7 +36,8 @@ window.addEventListener('DOMContentLoaded', () => {
       media: 'video/6.mp4',
       sources: [
         { text: 'X @Nattha2538', url: 'https://x.com/Nattha2538/status/1739302805998108745' },
-        { text: 'Trans by: X @fanTpkkrubs', url: 'https://x.com/fanTpkkrubs/status/1739338041981014419' }
+        { text: 'Trans by: X @fanTpkkrubs', url: 'https://x.com/fanTpkkrubs/status/1739338041981014419' },
+        { text: 'Thread Fact from X @terpakin', url: 'https://x.com/terpakin/status/1913213804986392747' }
       ]
     },
     {
@@ -46,7 +47,8 @@ window.addEventListener('DOMContentLoaded', () => {
       media: 'video/7.mp4',
       sources: [
         { text: 'X @snolilac', url: 'https://x.com/snolilac/status/1862461800916324826' },
-        { text: 'Trans by: X @ohmtpkk', url: 'https://x.com/ohmtpkk/status/1862465677581590643' }
+        { text: 'Trans by: X @ohmtpkk', url: 'https://x.com/ohmtpkk/status/1862465677581590643' },
+        { text: 'Thread Fact from X @terpakin', url: 'https://x.com/terpakin/status/1913213804986392747' }
       ]
     },
     {
