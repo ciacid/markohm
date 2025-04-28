@@ -87,7 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
       quote: 'Ohm said Mark is very lovely person',
       date: '02/04/2025',
       media: 'video/11.mp4',
-      sourceText: ' Source: Tiktok @chaosmoons',
+      sourceText: 'Tiktok @chaosmoons',
       sourceUrl: 'https://www.tiktok.com/@chaosmoons/video/7467606727123340550'
     },
     {

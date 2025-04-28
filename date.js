@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
         no: '03',
         quote: `Hirono Exhibition Date`,
         date: '12/07/2024',
-        media: ['hirono/hirono.mp4','hirono/hirono1.jpeg', 'hirono/hirono3.jpeg', 'hirono/hirono4.jpeg'],
+        media: ['hirono/hirono.mp4','hirono/hirono1.jpeg', 'hirono/hirono3.jpeg', 'hirono/hirono4.png'],
         sourceText: ' X @Nattha2538 ',
         sourceUrl: 'https://x.com/Nattha2538/status/1806729394926583954  '
       },
