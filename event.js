@@ -53,9 +53,9 @@ window.addEventListener('DOMContentLoaded', () => {
         no: '06',
         quote: `GrabFood No.1 ศึกชิงเจ้าสนามหิว x MarkOhm`,
         date: '06/03/2025',
-        media: ['event/16.jpeg', '6 grab/grab1.jpeg', '6 grab/grab 2.jpeg', '6 grab/grab3.jpeg','6 grab/grab 4.jpeg'],
+        media: ['event/16.jpeg', '6 grab/grab.mp4','6 grab/grab1.jpeg', '6 grab/grab 2.jpeg', '6 grab/grab3.jpeg','6 grab/grab 4.jpeg'],
         sources: [
-          { text: 'Instagram: @ohmtpk', url: 'https://www.instagram.com/ohmtpk' }
+          { text: 'X: @GrabTH', url: 'https://x.com/GrabTH/status/1897629995155255403' }
         ]
       },
       {
@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
         date: '05/04/2025',
         media: ['event/17.jpeg', 'event/bkbbif.jpeg','event/bkbbif1.jpeg','event/bkbbif2.jpeg','event/bkbbif.mp4'],
         sources: [
-          { text: 'Hashtag', url:'https://x.com/pkkohm/status/1908508643580170333' },
+          { text: 'Hashtag', url:'https://x.com/GrabTH/status/1897629995155255403' },
           { text: 'Foto by @ff_thegallery', url:'https://x.com/ff_thegallery/status/1908487825903018315' }
         ]
       },
