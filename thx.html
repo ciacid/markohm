@@ -78,6 +78,16 @@
     .sosmed-row-top, .sosmed-row-bottom, .sosmed-row-top a, .sosmed-row-bottom a {
   padding: 0;
 }
+.back {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(40px, 8vw, 50px);
+    z-index: 9999;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+  }
   </style>
 </head>
 <body>
@@ -95,6 +105,8 @@
       <a href="https://www.tiktok.com/@ohmtpk?is_from_webapp=1&sender_device=pc"><img src="sosmed/t o.png" alt="Tiktok O" /></a>
       <a href="https://x.com/Tpkkrubs"><img src="sosmed/x o.png" alt="Twitter O" /></a>
     </div>
+    <img src="asset/64.png" class="back" alt="back button" onclick="window.location.href='index.html'"> 
+
   </div>
 </body>
 </html>
