@@ -73,7 +73,8 @@ window.addEventListener('DOMContentLoaded', () => {
       date: '16/03/2025',
       media: 'video/8.mp4',
       sources: [
-        { text: 'Tiktok @ananandme', url: 'https://www.tiktok.com/@ananandme/video/7387288877947571463' }
+        { text: 'Tiktok @ananandme', url: 'https://www.tiktok.com/@ananandme/video/7387288877947571463' },
+        { text: 'Thread Fact from X @terpakin', url: 'https://x.com/terpakin/status/1913213804986392747' }
       ]
     },
     {
@@ -121,8 +122,19 @@ window.addEventListener('DOMContentLoaded', () => {
       sources: [
         { text: 'Tiktok @scareuhehe', url: 'https://www.tiktok.com/@scareuhehe/video/7367673888114806032' }
       ]
+    },
+    {
+      no: '14',
+      quote: 'mark on how ohm invites him on a baking date and how he doesn`t want to make ohm upset',
+      date: '29/04/2024',
+      media: 'video/bake.mp4',
+      sources: [
+        { text: 'X @ohmtpkk', url: 'https://x.com/ohmtpkk/status/1828926184434049158' },
+        { text: 'Thread Fact from X @terpakin', url: 'https://x.com/terpakin/status/1913213804986392747' }
+      ]
     }
   ];
+
 
   data.forEach((item, index) => {
     const bill = document.createElement('div');

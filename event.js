@@ -44,9 +44,9 @@ window.addEventListener('DOMContentLoaded', () => {
         date: '09/01/2025',
         media: ['event/15.jpeg', 'event/lego.mp4', 'event/lego2.jpeg', 'event/lego1.jpeg'],
         sources: [
-          { text:'X @bearly_bear_', url: 'https://x.com/bearly_bear_' },
-          { text: '@ff_thegallery', url: 'https://x.com/ff_thegallery' },
-          { text: '@fanTpkkrubs', url: 'https://x.com/fanTpkkrubs' }
+          { text:'X @bearly_bear_', url: 'https://x.com/bearly_bear_/status/1877330431466680681' },
+          { text: '@ff_thegallery', url: 'https://x.com/ff_thegallery/status/1877309316924883006' },
+          { text: '@fanTpkkrubs', url: 'https://x.com/fanTpkkrubs/status/1877352006437716241' }
         ]
       },
       {
@@ -98,6 +98,8 @@ window.addEventListener('DOMContentLoaded', () => {
           { text: 'Trans by @ohmtpkk', url: 'https://x.com/ohmtpkk/status/1912851760261271870' }
         ]
       }
+
+      
     ];
   
     data.forEach((item, index) => {
