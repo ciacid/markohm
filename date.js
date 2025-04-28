@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
       },
       {
         no: '05',
-        quote: 'Dinner Night Date',
+        quote: 'Dinner Date',
         date: '20/04/2025',
         media: ['dinnerdate/horsamut.mp4', 'dinnerdate/1.PNG', 'dinnerdate/2.JPG', 'dinnerdate/3.JPG', 'dinnerdate/4.JPG'],
         sourceText: 'Instagram: @ohmtpk',
